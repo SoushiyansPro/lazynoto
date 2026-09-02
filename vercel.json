@@ -2,9 +2,17 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/", "destination": "/site/home.html" },
-    { "source": "/home", "destination": "/site/home.html" },
-    { "source": "/blog", "destination": "/site/blog.html" },
-    { "source": "/docs", "destination": "/site/docs.html" }
+    { "source": "/", "destination": "/main/site/home.html" },
+    { "source": "/home", "destination": "/main/site/home.html" },
+    { "source": "/blog", "destination": "/main/site/blog.html" },
+    { "source": "/docs", "destination": "/main/site/docs.html" }
+  ],
+  "redirects": [
+    { "source": "/main/site/home.html", "destination": "/", "permanent": true },
+    { "source": "/main/site/blog.html", "destination": "/blog", "permanent": true },
+    { "source": "/main/site/docs.html", "destination": "/docs", "permanent": true },
+    { "source": "/main/site/home", "destination": "/", "permanent": true },
+    { "source": "/main/site/blog", "destination": "/blog", "permanent": true },
+    { "source": "/main/site/docs", "destination": "/docs", "permanent": true }
   ]
 }
