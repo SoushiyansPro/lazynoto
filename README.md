@@ -1,7 +1,5 @@
 <div align="center">
 
-  <img src="https://github.com/user-attachments/assets/logo-placeholder.png" width="200" alt="LazyNoto Logo" />
-
   <h1>⚡ LazyNoto Framework</h1>
   
   <p align="center">
