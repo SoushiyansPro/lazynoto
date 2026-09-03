@@ -97,15 +97,8 @@
         }
 
         @keyframes floatSlow {
-
-            0%,
-            100% {
-                transform: translate(0px, 0px) scale(1);
-            }
-
-            50% {
-                transform: translate(25px, -20px) scale(1.05);
-            }
+            0%, 100% { transform: translate(0px, 0px) scale(1); }
+            50% { transform: translate(25px, -20px) scale(1.05); }
         }
 
         .animate-blob {
@@ -132,8 +125,7 @@
     </style>
 </head>
 
-<body
-    class="glass-bg text-slate-800 min-h-screen relative overflow-x-hidden selection:bg-cream-400 selection:text-white">
+<body class="glass-bg text-slate-800 min-h-screen relative overflow-x-hidden selection:bg-cream-400 selection:text-white">
 
     <!-- Scroll Progress Bar -->
     <div id="progressBar"
@@ -141,26 +133,20 @@
         style="width: 0%"></div>
 
     <!-- Decorative Background Ambient Blobs -->
-    <div
-        class="fixed top-12 left-10 w-96 h-96 bg-gradient-to-tr from-cream-300/35 to-amber-200/25 rounded-full blur-3xl pointer-events-none animate-blob">
-    </div>
-    <div class="fixed bottom-10 right-10 w-[30rem] h-[30rem] bg-gradient-to-br from-cream-200/40 to-yellow-100/30 rounded-full blur-3xl pointer-events-none animate-blob"
-        style="animation-delay: 4s;"></div>
+    <div class="fixed top-12 left-10 w-96 h-96 bg-gradient-to-tr from-cream-300/35 to-amber-200/25 rounded-full blur-3xl pointer-events-none animate-blob"></div>
+    <div class="fixed bottom-10 right-10 w-[30rem] h-[30rem] bg-gradient-to-br from-cream-200/40 to-yellow-100/30 rounded-full blur-3xl pointer-events-none animate-blob" style="animation-delay: 4s;"></div>
 
     <!-- Header / Navbar -->
     <header class="sticky top-4 z-40 max-w-7xl mx-auto px-4 sm:px-6 mb-8">
         <nav class="glassmorphism rounded-2xl px-5 py-3.5 flex items-center justify-between shadow-glass">
             <!-- Brand Logo -->
-            <a href="home.html" class="flex items-center gap-3 group">
-                <div
-                    class="w-10 h-10 rounded-xl bg-gradient-to-br from-cream-500 to-champagne-600 flex items-center justify-center text-white shadow-md shadow-cream-500/20 group-hover:scale-105 transition">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-cream-500 to-champagne-600 flex items-center justify-center text-white shadow-md shadow-cream-500/20 group-hover:scale-105 transition">
                     <i data-lucide="sparkles" class="w-5 h-5"></i>
                 </div>
                 <div>
                     <span class="text-base font-extrabold text-slate-900 tracking-tight">LazyNoto</span>
-                    <span
-                        class="text-[10px] text-cream-500 bg-cream-100 px-2 py-0.5 rounded-full font-semibold mr-1.5 border border-cream-200">دانشنامه
-                        جامع</span>
+                    <span class="text-[10px] text-cream-500 bg-cream-100 px-2 py-0.5 rounded-full font-semibold mr-1.5 border border-cream-200">دانشنامه جامع</span>
                 </div>
             </a>
 
@@ -191,73 +177,56 @@
                         <span class="text-xs font-extrabold text-slate-900 flex items-center gap-2">
                             <i data-lucide="list" class="w-4 h-4 text-cream-500"></i> فهرست سرفصل‌ها
                         </span>
-                        <span class="text-[10px] bg-cream-200 text-cream-600 px-2 py-0.5 rounded-full font-bold">۱۱
-                            بخش</span>
+                        <span class="text-[10px] bg-cream-200 text-cream-600 px-2 py-0.5 rounded-full font-bold">۱۱ بخش</span>
                     </div>
 
                     <nav class="space-y-1 text-xs font-semibold text-slate-600">
-                        <a href="#python-basics"
-                            class="sidebar-link flex items-center gap-2.5 p-2.5 rounded-xl border border-transparent">
+                        <a href="#python-basics" class="sidebar-link flex items-center gap-2.5 p-2.5 rounded-xl border border-transparent">
                             <i data-lucide="terminal" class="w-4 h-4 text-cream-500"></i> ۰.۱ الفبای پایتون
                         </a>
-                        <a href="#async-await"
-                            class="sidebar-link flex items-center gap-2.5 p-2.5 rounded-xl border border-transparent">
+                        <a href="#async-await" class="sidebar-link flex items-center gap-2.5 p-2.5 rounded-xl border border-transparent">
                             <i data-lucide="coffee" class="w-4 h-4 text-cream-500"></i> ۰.۲ راز Async / Await
                         </a>
-                        <a href="#telegram-bot-intro"
-                            class="sidebar-link flex items-center gap-2.5 p-2.5 rounded-xl border border-transparent">
-                            <i data-lucide="bot" class="w-4 h-4 text-cream-500"></i> ۱. ربات تلگرام چطور کار می‌کند؟
+                        <a href="#telegram-bot-intro" class="sidebar-link flex items-center gap-2.5 p-2.5 rounded-xl border border-transparent">
+                            <i data-lucide="bot" class="w-4 h-4 text-cream-500"></i> ۱. ساختار بات تلگرام
                         </a>
-                        <a href="#polling-webhook"
-                            class="sidebar-link flex items-center gap-2.5 p-2.5 rounded-xl border border-transparent">
+                        <a href="#polling-webhook" class="sidebar-link flex items-center gap-2.5 p-2.5 rounded-xl border border-transparent">
                             <i data-lucide="refresh-cw" class="w-4 h-4 text-cream-500"></i> ۱.۵ مقایسه Polling و Webhook
                         </a>
-                        <a href="#why-lazynoto"
-                            class="sidebar-link flex items-center gap-2.5 p-2.5 rounded-xl border border-transparent">
+                        <a href="#why-lazynoto" class="sidebar-link flex items-center gap-2.5 p-2.5 rounded-xl border border-transparent">
                             <i data-lucide="zap" class="w-4 h-4 text-cream-500"></i> ۲. چرا فریم‌ورک LazyNoto؟
                         </a>
-                        <a href="#botfather-token"
-                            class="sidebar-link flex items-center gap-2.5 p-2.5 rounded-xl border border-transparent">
+                        <a href="#botfather-token" class="sidebar-link flex items-center gap-2.5 p-2.5 rounded-xl border border-transparent">
                             <i data-lucide="key" class="w-4 h-4 text-cream-500"></i> ۳. دریافت توکن از BotFather
                         </a>
-                        <a href="#installation"
-                            class="sidebar-link flex items-center gap-2.5 p-2.5 rounded-xl border border-transparent">
+                        <a href="#installation" class="sidebar-link flex items-center gap-2.5 p-2.5 rounded-xl border border-transparent">
                             <i data-lucide="download-cloud" class="w-4 h-4 text-cream-500"></i> ۴. نصب و راه‌اندازی
                         </a>
-                        <a href="#quickstart"
-                            class="sidebar-link flex items-center gap-2.5 p-2.5 rounded-xl border border-transparent">
+                        <a href="#quickstart" class="sidebar-link flex items-center gap-2.5 p-2.5 rounded-xl border border-transparent">
                             <i data-lucide="play-circle" class="w-4 h-4 text-cream-500"></i> ۵. اولین پروژه (Quickstart)
                         </a>
-                        <a href="#context-dissection"
-                            class="sidebar-link flex items-center gap-2.5 p-2.5 rounded-xl border border-transparent">
+                        <a href="#context-dissection" class="sidebar-link flex items-center gap-2.5 p-2.5 rounded-xl border border-transparent">
                             <i data-lucide="layers" class="w-4 h-4 text-cream-500"></i> ۶. کالبدشکافی NotoContext
                         </a>
-                        <a href="#formatting"
-                            class="sidebar-link flex items-center gap-2.5 p-2.5 rounded-xl border border-transparent">
+                        <a href="#formatting" class="sidebar-link flex items-center gap-2.5 p-2.5 rounded-xl border border-transparent">
                             <i data-lucide="type" class="w-4 h-4 text-cream-500"></i> ۶.۵ استایل‌دهی و HTML
                         </a>
-                        <a href="#handlers-routing"
-                            class="sidebar-link flex items-center gap-2.5 p-2.5 rounded-xl border border-transparent">
+                        <a href="#handlers-routing" class="sidebar-link flex items-center gap-2.5 p-2.5 rounded-xl border border-transparent">
                             <i data-lucide="route" class="w-4 h-4 text-cream-500"></i> ۷. روتینگ و دکوراتورها
                         </a>
-                        <a href="#menus"
-                            class="sidebar-link flex items-center gap-2.5 p-2.5 rounded-xl border border-transparent">
+                        <a href="#menus" class="sidebar-link flex items-center gap-2.5 p-2.5 rounded-xl border border-transparent">
                             <i data-lucide="layout-grid" class="w-4 h-4 text-cream-500"></i> ۸. منوها و دکمه‌ها
                         </a>
-                        <a href="#fsm-guide"
-                            class="sidebar-link flex items-center gap-2.5 p-2.5 rounded-xl border border-transparent">
+                        <a href="#fsm-guide" class="sidebar-link flex items-center gap-2.5 p-2.5 rounded-xl border border-transparent">
                             <i data-lucide="git-branch" class="w-4 h-4 text-cream-500"></i> ۹. ماشین وضعیت (FSM)
                         </a>
-                        <a href="#media-handling"
-                            class="sidebar-link flex items-center gap-2.5 p-2.5 rounded-xl border border-transparent">
+                        <a href="#media-handling" class="sidebar-link flex items-center gap-2.5 p-2.5 rounded-xl border border-transparent">
                             <i data-lucide="image" class="w-4 h-4 text-cream-500"></i> ۹.۵ ارسال مدیا و فایل
                         </a>
-                        <a href="#resilience"
-                            class="sidebar-link flex items-center gap-2.5 p-2.5 rounded-xl border border-transparent">
+                        <a href="#resilience" class="sidebar-link flex items-center gap-2.5 p-2.5 rounded-xl border border-transparent">
                             <i data-lucide="shield-check" class="w-4 h-4 text-cream-500"></i> ۱۰. پایداری و تاب‌آوری
                         </a>
-                        <a href="#full-project"
-                            class="sidebar-link flex items-center gap-2.5 p-2.5 rounded-xl border border-cream-300 bg-cream-100 text-cream-600 font-bold">
+                        <a href="#full-project" class="sidebar-link flex items-center gap-2.5 p-2.5 rounded-xl border border-cream-300 bg-cream-100 text-cream-600 font-bold">
                             <i data-lucide="folder-git-2" class="w-4 h-4 text-cream-500"></i> ۱۱. پروژه جامع تیکتینگ
                         </a>
                     </nav>
@@ -270,26 +239,20 @@
                 <!-- Section 0.1: Python Basics -->
                 <section id="python-basics" class="glassmorphism-card rounded-3xl p-6 sm:p-8 space-y-4">
                     <div class="flex items-center gap-3">
-                        <div
-                            class="w-10 h-10 rounded-xl bg-cream-100 border border-cream-200 flex items-center justify-center text-cream-500 font-bold">
+                        <div class="w-10 h-10 rounded-xl bg-cream-100 border border-cream-200 flex items-center justify-center text-cream-500 font-bold">
                             ۰.۱
                         </div>
                         <div>
-                            <h2 class="text-lg sm:text-xl font-extrabold text-slate-900">الفبای پایتون برای ربات‌نویسی
-                            </h2>
+                            <h2 class="text-lg sm:text-xl font-extrabold text-slate-900">الفبای پایتون برای ربات‌نویسی</h2>
                             <p class="text-xs text-slate-500">متغیرها، انواع داده‌ها و ساختار توابع</p>
                         </div>
                     </div>
                     <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        پیش از ورود به دنیای ربات‌ها، باید بدانیم در پایتون اطلاعات چگونه نگهداری و پردازش می‌شوند. در
-                        ربات‌نویسی، به وفور با <strong>رشته‌ها (String)</strong> برای دریافت متن پیام‌ها، <strong>عددها
-                            (Integers)</strong> برای شناسه‌های چت و کاربر، و <strong>دیکشنری‌ها (Dict)</strong> برای
-                        ذخیره موقت اطلاعات سر و کار داریم:
+                        پیش از ورود به دنیای ربات‌ها، باید بدانیم در پایتون اطلاعات چگونه نگهداری و پردازش می‌شوند. در ربات‌نویسی، به وفور با <strong>رشته‌ها (String)</strong> برای دریافت متن پیام‌ها، <strong>عددها (Integers)</strong> برای شناسه‌های چت و کاربر، و <strong>دیکشنری‌ها (Dict)</strong> برای ذخیره موقت اطلاعات سر و کار داریم:
                     </p>
 
                     <div class="relative group">
-                        <pre
-                            class="bg-[#1A1B23] text-slate-200 rounded-2xl p-5 text-xs sm:text-sm overflow-x-auto leading-relaxed shadow-inner"><code># تعریف متغیرها و انواع داده
+                        <pre class="bg-[#1A1B23] text-slate-200 rounded-2xl p-5 text-xs sm:text-sm overflow-x-auto leading-relaxed shadow-inner"><code># تعریف متغیرها و انواع داده
 user_id = 987654321          # شناسه چت (عددی)
 user_name = "سوشیانس"        # نام کاربر (متنی)
 is_active = True             # وضعیت فعال بودن (بولین)
@@ -299,8 +262,7 @@ def generate_welcome_message(name: str) -> str:
     return f"درود {name} عزیز! به سیستم هوشمند خوش آمدید 🚀"
 
 print(generate_welcome_message(user_name))</code></pre>
-                        <button onclick="copyCode(this)"
-                            class="absolute top-3 left-3 bg-white/10 hover:bg-white/20 text-slate-300 p-2 rounded-xl text-xs flex items-center gap-1 transition">
+                        <button onclick="copyCode(this)" class="absolute top-3 left-3 bg-white/10 hover:bg-white/20 text-slate-300 p-2 rounded-xl text-xs flex items-center gap-1 transition">
                             <i data-lucide="copy" class="w-3.5 h-3.5"></i>
                         </button>
                     </div>
@@ -309,27 +271,20 @@ print(generate_welcome_message(user_name))</code></pre>
                 <!-- Section 0.2: Async / Await -->
                 <section id="async-await" class="glassmorphism-card rounded-3xl p-6 sm:p-8 space-y-4">
                     <div class="flex items-center gap-3">
-                        <div
-                            class="w-10 h-10 rounded-xl bg-cream-100 border border-cream-200 flex items-center justify-center text-cream-500 font-bold">
+                        <div class="w-10 h-10 rounded-xl bg-cream-100 border border-cream-200 flex items-center justify-center text-cream-500 font-bold">
                             ۰.۲
                         </div>
                         <div>
-                            <h2 class="text-lg sm:text-xl font-extrabold text-slate-900">راز برنامه‌نویسی ناهمگام (Async
-                                / Await)</h2>
+                            <h2 class="text-lg sm:text-xl font-extrabold text-slate-900">راز برنامه‌نویسی ناهمگام (Async / Await)</h2>
                             <p class="text-xs text-slate-500">چرا برای تلگرام به async نیاز داریم؟</p>
                         </div>
                     </div>
                     <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        تصور کنید در یک کافی‌شاپ، گارسون سفارش قهوه نفر اول را بگیرد و تا زمانی که قهوه دم بکشد جلوی میز
-                        او بایستد و به بقیه مشتری‌ها سرویس ندهد! در کدنویسی همگام (Sync) ربات شما معطل دریافت پاسخ
-                        تلگرام می‌شود. اما با <code class="text-cream-500 font-mono font-bold">async</code> و <code
-                            class="text-cream-500 font-mono font-bold">await</code> گارسون ربات شما سفارش را ثبت کرده و
-                        بلافاصله به پیام کاربران دیگر پاسخ می‌دهد:
+                        تصور کنید در یک کافی‌شاپ، گارسون سفارش قهوه نفر اول را بگیرد و تا زمانی که قهوه دم بکشد جلوی میز او بایستد و به بقیه مشتری‌ها سرویس ندهد! در کدنویسی همگام (Sync) ربات شما معطل دریافت پاسخ تلگرام می‌شود. اما با <code class="text-cream-500 font-mono font-bold">async</code> و <code class="text-cream-500 font-mono font-bold">await</code> گارسون ربات شما سفارش را ثبت کرده و بلافاصله‌به پیام کاربران دیگر پاسخ می‌دهد:
                     </p>
 
                     <div class="relative group">
-                        <pre
-                            class="bg-[#1A1B23] text-slate-200 rounded-2xl p-5 text-xs sm:text-sm overflow-x-auto leading-relaxed shadow-inner"><code>import asyncio
+                        <pre class="bg-[#1A1B23] text-slate-200 rounded-2xl p-5 text-xs sm:text-sm overflow-x-auto leading-relaxed shadow-inner"><code>import asyncio
 
 # تعریف یک تابع ناهمگام با async
 async def prepare_coffee(customer_name: str):
@@ -346,8 +301,7 @@ async def main():
     )
 
 asyncio.run(main())</code></pre>
-                        <button onclick="copyCode(this)"
-                            class="absolute top-3 left-3 bg-white/10 hover:bg-white/20 text-slate-300 p-2 rounded-xl text-xs flex items-center gap-1 transition">
+                        <button onclick="copyCode(this)" class="absolute top-3 left-3 bg-white/10 hover:bg-white/20 text-slate-300 p-2 rounded-xl text-xs flex items-center gap-1 transition">
                             <i data-lucide="copy" class="w-3.5 h-3.5"></i>
                         </button>
                     </div>
@@ -356,46 +310,37 @@ asyncio.run(main())</code></pre>
                 <!-- Section 1: How Telegram Bot Works -->
                 <section id="telegram-bot-intro" class="glassmorphism-card rounded-3xl p-6 sm:p-8 space-y-4">
                     <div class="flex items-center gap-3">
-                        <div
-                            class="w-10 h-10 rounded-xl bg-cream-100 border border-cream-200 flex items-center justify-center text-cream-500 font-bold">
+                        <div class="w-10 h-10 rounded-xl bg-cream-100 border border-cream-200 flex items-center justify-center text-cream-500 font-bold">
                             ۱
                         </div>
                         <div>
-                            <h2 class="text-lg sm:text-xl font-extrabold text-slate-900">ربات تلگرام از پشت‌صحنه چطور
-                                کار می‌کند؟</h2>
+                            <h2 class="text-lg sm:text-xl font-extrabold text-slate-900">ربات تلگرام از پشت‌صحنه چطور کار می‌کند؟</h2>
                             <p class="text-xs text-slate-500">معماری مبتنی بر آبجکت‌های Update و سرور تلگرام</p>
                         </div>
                     </div>
                     <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        وقتی کاربری در تلگرام به ربات شما پیامی می‌فرستد، تلگرام آن رویداد را به یک بسته داده به نام
-                        <strong>Update</strong> تبدیل می‌کند. ربات شما این بسته را دریافت، تحلیل کرده و سپس پاسخی از
-                        طریق متدهای استاندارد Bot API (مثل <code class="text-cream-500 font-mono">sendMessage</code>)
-                        برای تلگرام ارسال می‌نماید.
+                        وقتی کاربری در تلگرام به ربات شما پیامی می‌فرستد، تلگرام آن رویداد را به یک بسته داده به نام <strong>Update</strong> تبدیل می‌کند. ربات شما این بسته را دریافت، تحلیل کرده و سپس پاسخی از طریق متدهای استاندارد Bot API (مثل <code class="text-cream-500 font-mono">sendMessage</code>) برای تلگرام ارسال می‌نماید.
                     </p>
                 </section>
 
                 <!-- Section 1.5: Polling vs Webhook -->
                 <section id="polling-webhook" class="glassmorphism-card rounded-3xl p-6 sm:p-8 space-y-4">
                     <div class="flex items-center gap-3">
-                        <div
-                            class="w-10 h-10 rounded-xl bg-cream-100 border border-cream-200 flex items-center justify-center text-cream-500 font-bold">
+                        <div class="w-10 h-10 rounded-xl bg-cream-100 border border-cream-200 flex items-center justify-center text-cream-500 font-bold">
                             ۱.۵
                         </div>
                         <div>
-                            <h2 class="text-lg sm:text-xl font-extrabold text-slate-900">مقایسه Long Polling و Webhook
-                            </h2>
+                            <h2 class="text-lg sm:text-xl font-extrabold text-slate-900">مقایسه Long Polling و Webhook</h2>
                             <p class="text-xs text-slate-500">دو روش دریافت پیام‌ها از سرورهای تلگرام</p>
                         </div>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div class="p-5 rounded-2xl bg-cream-100/70 border border-cream-200 space-y-2">
                             <h4 class="text-xs font-bold text-slate-900 flex items-center gap-2">
-                                <i data-lucide="radio" class="w-4 h-4 text-cream-500"></i> Long Polling (پیش‌فرض
-                                LazyNoto)
+                                <i data-lucide="radio" class="w-4 h-4 text-cream-500"></i> Long Polling (پیش‌فرض LazyNoto)
                             </h4>
                             <p class="text-xs text-slate-600 leading-relaxed">
-                                ربات شما مدام از سرور تلگرام می‌پرسد «پیام جدیدی هست؟». نیازی به دامنه، آی‌پی اختصاصی یا
-                                SSL ندارد و به صورت مستقیم روی سیستم لوکال یا سرور اجرا می‌شود.
+                                ربات شما مدام از سرور تلگرام می‌پرسد «پیام جدیدی هست؟». نیازی به دامنه، آی‌پی اختصاصی یا SSL ندارد و به صورت مستقیم روی سیستم لوکال یا سرور اجرا می‌شود.
                             </p>
                         </div>
                         <div class="p-5 rounded-2xl bg-cream-100/70 border border-cream-200 space-y-2">
@@ -403,8 +348,7 @@ asyncio.run(main())</code></pre>
                                 <i data-lucide="webhook" class="w-4 h-4 text-cream-500"></i> Webhook
                             </h4>
                             <p class="text-xs text-slate-600 leading-relaxed">
-                                تلگرام به محض دریافت پیام، یک درخواست POST به سرور شما می‌فرستد. این روش نیازمند دامنه
-                                عمومی با گواهی SSL معتبر است.
+                                تلگرام به محض دریافت پیام، یک درخواست POST به سرور شما می‌فرستد. این روش نیازمند دامنه عمومی با گواهی SSL معتبر است.
                             </p>
                         </div>
                     </div>
@@ -413,8 +357,7 @@ asyncio.run(main())</code></pre>
                 <!-- Section 2: Why LazyNoto -->
                 <section id="why-lazynoto" class="glassmorphism-card rounded-3xl p-6 sm:p-8 space-y-4">
                     <div class="flex items-center gap-3">
-                        <div
-                            class="w-10 h-10 rounded-xl bg-cream-100 border border-cream-200 flex items-center justify-center text-cream-500 font-bold">
+                        <div class="w-10 h-10 rounded-xl bg-cream-100 border border-cream-200 flex items-center justify-center text-cream-500 font-bold">
                             ۲
                         </div>
                         <div>
@@ -423,82 +366,61 @@ asyncio.run(main())</code></pre>
                         </div>
                     </div>
                     <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        کتابخانه‌های خام تلگرام نیازمند پاس‌دادن مکرر <code
-                            class="text-cream-500 font-mono">chat_id</code>، ساختارهای پیچیده و چندین خط کد برای یک
-                        ارسال ساده هستند. در LazyNoto تمام این جزئیات در شیء قدرتمند <code
-                            class="text-cream-500 font-mono font-bold">ctx</code> کپسوله شده است.
+                        کتابخانه‌های خام تلگرام نیازمند پاس‌دادن مکرر <code class="text-cream-500 font-mono">chat_id</code>، ساختارهای پیچیده و چندین خط کد برای یک ارسال ساده هستند. در LazyNoto تمام این جزئیات در شیء قدرتمند <code class="text-cream-500 font-mono font-bold">ctx</code> کپسوله شده است.
                     </p>
                 </section>
 
                 <!-- Section 3: BotFather Token -->
                 <section id="botfather-token" class="glassmorphism-card rounded-3xl p-6 sm:p-8 space-y-4">
                     <div class="flex items-center gap-3">
-                        <div classcenter justify-center text-cream-500 font-bold">
-                            ۲
-                        </div>
-                        <div>
-                            <h2 class="text-lg sm:text-xl font-extrabold text-slate-900">چرا فریم‌ورک LazyNoto؟</h2>
-                            <p class="text-xs text-slate-500">کاهش چشم‌گیر کدهای تکراری و بالا بردن خوانایی سورس</p>
-                        </div>
-                    </div>
-                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        کتابخانه‌های خام تلگرام نیازمند پاس‌دادن مکرر <code
-                            class="text-cream-500 font-mono">chat_id</code>، ساختارهای پیچیده و چندین خط کد برای یک
-                        ارسال ساده هستند. در LazyNoto تمام این جزئیات در شیء قدرتمند <code
-                            class="text-cream-500 font-mono font-bold">ctx</code> کپسوله شده است.
-                    </p>
-                </section>
-
-                <!-- Section 3: BotFather Token -->
-                <section id="botfather-token" class="glassmorphism-card rounded-3xl p-6 sm:p-8 space-y-4">
-                    <div class="flex items-center gap-3">
-                        <div
-                            class="w-10 h-10 rounded-xl bg-cream-100 border border-cream-200 flex items-center justify-center text-cream-500 font-bold">
+                        <div class="w-10 h-10 rounded-xl bg-cream-100 border border-cream-200 flex items-center justify-center text-cream-500 font-bold">
                             ۳
                         </div>
                         <div>
-                            <h2 class="text-lg sm:text-xl font-extrabold text-slate-900">راهنمای دریافت توکن از
-                                BotFather</h2>
-                            <p class=" items-center gap-3">
-                            <div
-                                class="w-10 h-10 rounded-xl bg-cream-100 border border-cream-200 flex items-center justify-center text-cream-500 font-bold">
-                                ۴
-                            </div>
-                            <div>
-                                <h2 class="text-lg sm:text-xl font-extrabold text-slate-900">نصب و پیکربندی پکیج‌ها</h2>
-                                <p class="text-xs text-slate-500">راه‌اندازی در کمتر از ۱۰ ثانیه با ابزار استاندارد pip
-                                </p>
-                            </div>
+                            <h2 class="text-lg sm:text-xl font-extrabold text-slate-900">راهنمای دریافت توکن از BotFather</h2>
+                            <p class="text-xs text-slate-500">ساخت ربات تلگرامی و دریافت کلید دسترسی به API</p>
                         </div>
-                        <div class="relative group">
-                            <pre
-                                class="bg-[#1A1B23] text-slate-200 rounded-2xl p-5 text-xs sm:text-sm overflow-x-auto leading-relaxed shadow-inner"><code># نصب فریم‌ورک اختصاصی
+                    </div>
+                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                        برای شروع، وارد ربات رسمی <a href="https://t.me/BotFather" target="_blank" class="text-cream-600 font-bold hover:underline">@BotFather</a> در تلگرام شوید، دستور <code class="text-cream-600 font-mono">/newbot</code> را ارسال کنید و پس از انتخاب نام و نام کاربری، توکن دسترسی (HTTP API Token) را دریافت نمایید.
+                    </p>
+                </section>
+
+                <!-- Section 4: Installation -->
+                <section id="installation" class="glassmorphism-card rounded-3xl p-6 sm:p-8 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-cream-100 border border-cream-200 flex items-center justify-center text-cream-500 font-bold">
+                            ۴
+                        </div>
+                        <div>
+                            <h2 class="text-lg sm:text-xl font-extrabold text-slate-900">نصب و پیکربندی پکیج‌ها</h2>
+                            <p class="text-xs text-slate-500">راه‌اندازی در کمتر از ۱۰ ثانیه با ابزار استاندارد pip</p>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <pre class="bg-[#1A1B23] text-slate-200 rounded-2xl p-5 text-xs sm:text-sm overflow-x-auto leading-relaxed shadow-inner"><code># نصب فریم‌ورک اختصاصی
 pip install python-telegram-bot
 
 # و قرار دادن پکیج یا فایل کمکی lazynoto در مسیر پروژه</code></pre>
-                            <button onclick="copyCode(this)"
-                                class="absolute top-3 left-3 bg-white/10 hover:bg-white/20 text-slate-300 p-2 rounded-xl text-xs flex items-center gap-1 transition">
-                                <i data-lucide="copy" class="w-3.5 h-3.5"></i>
-                            </button>
-                        </div>
+                        <button onclick="copyCode(this)" class="absolute top-3 left-3 bg-white/10 hover:bg-white/20 text-slate-300 p-2 rounded-xl text-xs flex items-center gap-1 transition">
+                            <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+                        </button>
+                    </div>
                 </section>
 
                 <!-- Section 5: Quickstart -->
                 <section id="quickstart" class="glassmorphism-card rounded-3xl p-6 sm:p-8 space-y-4">
                     <div class="flex items-center gap-3">
-                        <div
-                            class="w-10 h-10 rounded-xl bg-cream-100 border border-cream-200 flex items-center justify-center text-cream-500 font-bold">
+                        <div class="w-10 h-10 rounded-xl bg-cream-100 border border-cream-200 flex items-center justify-center text-cream-500 font-bold">
                             ۵
                         </div>
                         <div>
-                            <h2 class="text-lg sm:text-xl font-extrabold text-slate-900">اولین پروژه عملی (Quickstart)
-                            </h2>
+                            <h2 class="text-lg sm:text-xl font-extrabold text-slate-900">اولین پروژه عملی (Quickstart)</h2>
                             <p class="text-xs text-slate-500">ساده‌ترین ربات پاسخ‌گو به دستور start</p>
                         </div>
                     </div>
                     <div class="relative group">
-                        <pre
-                            class="bg-[#1A1B23] text-slate-200 rounded-2xl p-5 text-xs sm:text-sm overflow-x-auto leading-relaxed shadow-inner"><code>from lazynoto import LazyNoto, NotoContext
+                        <pre class="bg-[#1A1B23] text-slate-200 rounded-2xl p-5 text-xs sm:text-sm overflow-x-auto leading-relaxed shadow-inner"><code>from lazynoto import LazyNoto, NotoContext
 
 # نمونه‌سازی از ربات با توکن
 bot = LazyNoto(token="YOUR_TELEGRAM_BOT_TOKEN")
@@ -510,8 +432,7 @@ async def start_handler(ctx: NotoContext):
 if __name__ == "__main__":
     print("ربات با موفقیت فعال شد...")
     bot.run()</code></pre>
-                        <button onclick="copyCode(this)"
-                            class="absolute top-3 left-3 bg-white/10 hover:bg-white/20 text-slate-300 p-2 rounded-xl text-xs flex items-center gap-1 transition">
+                        <button onclick="copyCode(this)" class="absolute top-3 left-3 bg-white/10 hover:bg-white/20 text-slate-300 p-2 rounded-xl text-xs flex items-center gap-1 transition">
                             <i data-lucide="copy" class="w-3.5 h-3.5"></i>
                         </button>
                     </div>
@@ -520,13 +441,11 @@ if __name__ == "__main__":
                 <!-- Section 6: Context Dissection -->
                 <section id="context-dissection" class="glassmorphism-card rounded-3xl p-6 sm:p-8 space-y-6">
                     <div class="flex items-center gap-3">
-                        <div
-                            class="w-10 h-10 rounded-xl bg-cream-100 border border-cream-200 flex items-center justify-center text-cream-500 font-bold">
+                        <div class="w-10 h-10 rounded-xl bg-cream-100 border border-cream-200 flex items-center justify-center text-cream-500 font-bold">
                             ۶
                         </div>
                         <div>
-                            <h2 class="text-lg sm:text-xl font-extrabold text-slate-900">کالبدشکافی کامل شیء NotoContext
-                            </h2>
+                            <h2 class="text-lg sm:text-xl font-extrabold text-slate-900">کالبدشکافی کامل شیء NotoContext</h2>
                             <p class="text-xs text-slate-500">مغز متفکر رویدادها، پراپرتی‌ها و متدهای عملیاتی</p>
                         </div>
                     </div>
@@ -535,20 +454,14 @@ if __name__ == "__main__":
                         <!-- Properties Card -->
                         <div class="bg-cream-100/70 border border-cream-200 p-5 rounded-2xl space-y-3">
                             <h4 class="text-xs sm:text-sm font-bold text-slate-900 flex items-center gap-2">
-                                <i data-lucide="info" class="w-4 h-4 text-cream-500"></i> ویژگی‌ها و داده‌ها
-                                (Properties)
+                                <i data-lucide="info" class="w-4 h-4 text-cream-500"></i> ویژگی‌ها و داده‌ها (Properties)
                             </h4>
                             <ul class="text-xs space-y-2.5 text-slate-700">
-                                <li><code class="text-cream-600 font-mono font-bold">ctx.user</code> : آبجکت کاربر
-                                    فرستنده</li>
-                                <li><code class="text-cream-600 font-mono font-bold">ctx.chat_id</code> : شناسه یکتای چت
-                                </li>
-                                <li><code class="text-cream-600 font-mono font-bold">ctx.text</code> : متن خام پیام
-                                    ارسال شده</li>
-                                <li><code class="text-cream-600 font-mono font-bold">ctx.message</code> : آبجکت کامل
-                                    پیام تلگرام</li>
-                                <li><code class="text-cream-600 font-mono font-bold">ctx.data</code> : داده بازگشتی دکمه
-                                    شیشه‌ای (Callback)</li>
+                                <li><code class="text-cream-600 font-mono font-bold">ctx.user</code> : آبجکت کاربر فرستنده</li>
+                                <li><code class="text-cream-600 font-mono font-bold">ctx.chat_id</code> : شناسه یکتای چت</li>
+                                <li><code class="text-cream-600 font-mono font-bold">ctx.text</code> : متن خام پیام ارسال شده</li>
+                                <li><code class="text-cream-600 font-mono font-bold">ctx.message</code> : آبجکت کامل پیام تلگرام</li>
+                                <li><code class="text-cream-600 font-mono font-bold">ctx.data</code> : داده بازگشتی دکمه شیشه‌ای (Callback)</li>
                             </ul>
                         </div>
 
@@ -558,20 +471,12 @@ if __name__ == "__main__":
                                 <i data-lucide="send" class="w-4 h-4 text-cream-500"></i> متدها و عملیات‌ها (Actions)
                             </h4>
                             <ul class="text-xs space-y-2.5 text-slate-700">
-                                <li><code class="text-emerald-700 font-mono font-bold">await ctx.reply("متن")</code> :
-                                    ارسال پیام جدید</li>
-                                <li><code class="text-emerald-700 font-mono font-bold">await ctx.edit("متن جدید")</code>
-                                    : ویرایش متن پیام فعلی</li>
-                                <li><code class="text-emerald-700 font-mono font-bold">await ctx.delete()</code> : حذف
-                                    پیام جاری</li>
-                                <li><code
-                                        class="text-emerald-700 font-mono font-bold">await ctx.answer_callback("متن")</code>
-                                    : پاپ‌آپ روی دکمه</li>
-                                <li><code
-                                        class="text-emerald-700 font-mono font-bold">await ctx.set_state("مرحله")</code>
-                                    : تغییر وضعیت FSM</li>
-                                <li><code class="text-emerald-700 font-mono font-bold">await ctx.clear_state()</code> :
-                                    ریست کردن وضعیت FSM</li>
+                                <li><code class="text-emerald-700 font-mono font-bold">await ctx.reply("متن")</code> : ارسال پیام جدید</li>
+                                <li><code class="text-emerald-700 font-mono font-bold">await ctx.edit("متن جدید")</code> : ویرایش متن پیام فعلی</li>
+                                <li><code class="text-emerald-700 font-mono font-bold">await ctx.delete()</code> : حذف پیام جاری</li>
+                                <li><code class="text-emerald-700 font-mono font-bold">await ctx.answer_callback("متن")</code> : پاپ‌آپ روی دکمه</li>
+                                <li><code class="text-emerald-700 font-mono font-bold">await ctx.set_state("مرحله")</code> : تغییر وضعیت FSM</li>
+                                <li><code class="text-emerald-700 font-mono font-bold">await ctx.clear_state()</code> : ریست کردن وضعیت FSM</li>
                             </ul>
                         </div>
                     </div>
@@ -580,24 +485,20 @@ if __name__ == "__main__":
                 <!-- Section 6.5: Text Formatting -->
                 <section id="formatting" class="glassmorphism-card rounded-3xl p-6 sm:p-8 space-y-4">
                     <div class="flex items-center gap-3">
-                        <div
-                            class="w-10 h-10 rounded-xl bg-cream-100 border border-cream-200 flex items-center justify-center text-cream-500 font-bold">
+                        <div class="w-10 h-10 rounded-xl bg-cream-100 border border-cream-200 flex items-center justify-center text-cream-500 font-bold">
                             ۶.۵
                         </div>
                         <div>
-                            <h2 class="text-lg sm:text-xl font-extrabold text-slate-900">زیباسازی و استایل متن‌ها (HTML
-                                Formatting)</h2>
+                            <h2 class="text-lg sm:text-xl font-extrabold text-slate-900">زیباسازی و استایل متن‌ها (HTML Formatting)</h2>
                             <p class="text-xs text-slate-500">استفاده از تگ‌های استاندارد برای فرمت‌دهی متون</p>
                         </div>
                     </div>
                     <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        برای بولد، ایتالیک، هایلایت کردن کد و افزودن لینک به متن پیام‌ها، از تگ‌های HTML پشتیبانی‌شده
-                        تلگرام استفاده کنید:
+                        برای بولد، ایتالیک، هایلایت کردن کد و افزودن لینک به متن پیام‌ها، از تگ‌های HTML پشتیبانی‌شده تلگرام استفاده کنید:
                     </p>
 
                     <div class="relative group">
-                        <pre
-                            class="bg-[#1A1B23] text-slate-200 rounded-2xl p-5 text-xs sm:text-sm overflow-x-auto leading-relaxed shadow-inner"><code>@bot.command("format")
+                        <pre class="bg-[#1A1B23] text-slate-200 rounded-2xl p-5 text-xs sm:text-sm overflow-x-auto leading-relaxed shadow-inner"><code>@bot.command("format")
 async def send_formatted_text(ctx: NotoContext):
     styled_message = (
         "&lt;b&gt;✨ متن بولد و پررنگ&lt;/b&gt;\n"
@@ -607,8 +508,7 @@ async def send_formatted_text(ctx: NotoContext):
         "&lt;a href='https://telegram.org'&gt;🔗 مشاهده وبسایت تلگرام&lt;/a&gt;"
     )
     await ctx.reply(styled_message, parse_mode="HTML")</code></pre>
-                        <button onclick="copyCode(this)"
-                            class="absolute top-3 left-3 bg-white/10 hover:bg-white/20 text-slate-300 p-2 rounded-xl text-xs flex items-center gap-1 transition">
+                        <button onclick="copyCode(this)" class="absolute top-3 left-3 bg-white/10 hover:bg-white/20 text-slate-300 p-2 rounded-xl text-xs flex items-center gap-1 transition">
                             <i data-lucide="copy" class="w-3.5 h-3.5"></i>
                         </button>
                     </div>
@@ -617,19 +517,16 @@ async def send_formatted_text(ctx: NotoContext):
                 <!-- Section 7: Handlers & Routing -->
                 <section id="handlers-routing" class="glassmorphism-card rounded-3xl p-6 sm:p-8 space-y-4">
                     <div class="flex items-center gap-3">
-                        <div
-                            class="w-10 h-10 rounded-xl bg-cream-100 border border-cream-200 flex items-center justify-center text-cream-500 font-bold">
+                        <div class="w-10 h-10 rounded-xl bg-cream-100 border border-cream-200 flex items-center justify-center text-cream-500 font-bold">
                             ۷
                         </div>
                         <div>
-                            <h2 class="text-lg sm:text-xl font-extrabold text-slate-900">انواع دکوراتورها و فیلترهای
-                                پیام</h2>
+                            <h2 class="text-lg sm:text-xl font-extrabold text-slate-900">انواع دکوراتورها و فیلترهای پیام</h2>
                             <p class="text-xs text-slate-500">مدیریت دستورات، فیلترهای متنی و کلیک دکمه‌ها</p>
                         </div>
                     </div>
                     <div class="relative group">
-                        <pre
-                            class="bg-[#1A1B23] text-slate-200 rounded-2xl p-5 text-xs sm:text-sm overflow-x-auto leading-relaxed shadow-inner"><code># ۱. دستورات اسلش‌دار
+                        <pre class="bg-[#1A1B23] text-slate-200 rounded-2xl p-5 text-xs sm:text-sm overflow-x-auto leading-relaxed shadow-inner"><code># ۱. دستورات اسلش‌دار
 @bot.command("rules")
 async def show_rules(ctx: NotoContext):
     await ctx.reply("📜 قوانین ربات:\n۱. عدم ارسال محتوای اسپم\n۲. احترام به اعضا")
@@ -644,8 +541,7 @@ async def price_query(ctx: NotoContext):
 async def on_confirm(ctx: NotoContext):
     await ctx.answer_callback("سفارش شما تایید شد! ✅")
     await ctx.edit("✅ فاکتور شما تسویه و ثبت نهایی گردید.")</code></pre>
-                        <button onclick="copyCode(this)"
-                            class="absolute top-3 left-3 bg-white/10 hover:bg-white/20 text-slate-300 p-2 rounded-xl text-xs flex items-center gap-1 transition">
+                        <button onclick="copyCode(this)" class="absolute top-3 left-3 bg-white/10 hover:bg-white/20 text-slate-300 p-2 rounded-xl text-xs flex items-center gap-1 transition">
                             <i data-lucide="copy" class="w-3.5 h-3.5"></i>
                         </button>
                     </div>
@@ -654,13 +550,11 @@ async def on_confirm(ctx: NotoContext):
                 <!-- Section 8: Menus & Buttons -->
                 <section id="menus" class="glassmorphism-card rounded-3xl p-6 sm:p-8 space-y-6">
                     <div class="flex items-center gap-3">
-                        <div
-                            class="w-10 h-10 rounded-xl bg-cream-100 border border-cream-200 flex items-center justify-center text-cream-500 font-bold">
+                        <div class="w-10 h-10 rounded-xl bg-cream-100 border border-cream-200 flex items-center justify-center text-cream-500 font-bold">
                             ۸
                         </div>
                         <div>
-                            <h2 class="text-lg sm:text-xl font-extrabold text-slate-900">ساخت کیبوردها و دکمه‌ها (Menus)
-                            </h2>
+                            <h2 class="text-lg sm:text-xl font-extrabold text-slate-900">ساخت کیبوردها و دکمه‌ها (Menus)</h2>
                             <p class="text-xs text-slate-500">متد چینشی زنجیره‌ای (Chaining) برای ساخت دکمه‌ها</p>
                         </div>
                     </div>
@@ -670,11 +564,9 @@ async def on_confirm(ctx: NotoContext):
 
                     <!-- Inline Menu -->
                     <div class="space-y-2">
-                        <span class="text-xs font-bold text-slate-800">۱. ساخت دکمه‌های شیشه‌ای (Inline
-                            Keyboard):</span>
+                        <span class="text-xs font-bold text-slate-800">۱. ساخت دکمه‌های شیشه‌ای (Inline Keyboard):</span>
                         <div class="relative group">
-                            <pre
-                                class="bg-[#1A1B23] text-slate-200 rounded-2xl p-5 text-xs sm:text-sm overflow-x-auto leading-relaxed shadow-inner"><code>from lazynoto import InlineMenu
+                            <pre class="bg-[#1A1B23] text-slate-200 rounded-2xl p-5 text-xs sm:text-sm overflow-x-auto leading-relaxed shadow-inner"><code>from lazynoto import InlineMenu
 
 # ساخت منوی شیشه‌ای چندسطری
 menu = (
@@ -694,8 +586,7 @@ async def show_menu(ctx: NotoContext):
 async def on_products(ctx: NotoContext):
     await ctx.answer_callback("در حال دریافت لیست...")
     await ctx.edit("📦 لیست محصولات آماده سفارش است!")</code></pre>
-                            <button onclick="copyCode(this)"
-                                class="absolute top-3 left-3 bg-white/10 hover:bg-white/20 text-slate-300 p-2 rounded-xl text-xs flex items-center gap-1 transition">
+                            <button onclick="copyCode(this)" class="absolute top-3 left-3 bg-white/10 hover:bg-white/20 text-slate-300 p-2 rounded-xl text-xs flex items-center gap-1 transition">
                                 <i data-lucide="copy" class="w-3.5 h-3.5"></i>
                             </button>
                         </div>
@@ -705,8 +596,7 @@ async def on_products(ctx: NotoContext):
                     <div class="space-y-2 pt-2">
                         <span class="text-xs font-bold text-slate-800">۲. ساخت منوی پایین صفحه (Reply Keyboard):</span>
                         <div class="relative group">
-                            <pre
-                                class="bg-[#1A1B23] text-slate-200 rounded-2xl p-5 text-xs sm:text-sm overflow-x-auto leading-relaxed shadow-inner"><code>from lazynoto import ReplyMenu
+                            <pre class="bg-[#1A1B23] text-slate-200 rounded-2xl p-5 text-xs sm:text-sm overflow-x-auto leading-relaxed shadow-inner"><code>from lazynoto import ReplyMenu
 
 main_keyboard = (
     ReplyMenu(resize_keyboard=True)
@@ -720,8 +610,7 @@ main_keyboard = (
 @bot.command("start")
 async def start_with_reply(ctx: NotoContext):
     await ctx.reply("منوی اصلی در دسترس شماست:", reply_markup=main_keyboard)</code></pre>
-                            <button onclick="copyCode(this)"
-                                class="absolute top-3 left-3 bg-white/10 hover:bg-white/20 text-slate-300 p-2 rounded-xl text-xs flex items-center gap-1 transition">
+                            <button onclick="copyCode(this)" class="absolute top-3 left-3 bg-white/10 hover:bg-white/20 text-slate-300 p-2 rounded-xl text-xs flex items-center gap-1 transition">
                                 <i data-lucide="copy" class="w-3.5 h-3.5"></i>
                             </button>
                         </div>
@@ -731,24 +620,20 @@ async def start_with_reply(ctx: NotoContext):
                 <!-- Section 9: FSM Guide -->
                 <section id="fsm-guide" class="glassmorphism-card rounded-3xl p-6 sm:p-8 space-y-4">
                     <div class="flex items-center gap-3">
-                        <div
-                            class="w-10 h-10 rounded-xl bg-cream-100 border border-cream-200 flex items-center justify-center text-cream-500 font-bold">
+                        <div class="w-10 h-10 rounded-xl bg-cream-100 border border-cream-200 flex items-center justify-center text-cream-500 font-bold">
                             ۹
                         </div>
                         <div>
-                            <h2 class="text-lg sm:text-xl font-extrabold text-slate-900">ماشین وضعیت و فرم‌های مرحله‌ای
-                                (FSM)</h2>
+                            <h2 class="text-lg sm:text-xl font-extrabold text-slate-900">ماشین وضعیت و فرم‌های مرحله‌ای (FSM)</h2>
                             <p class="text-xs text-slate-500">دریافت گام‌به‌گام اطلاعات با ذخیره‌سازی حافظه‌ای</p>
                         </div>
                     </div>
                     <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        وقتی می‌خواهید از کاربر در چند مرحله اطلاعات بگیرید (مثل ثبت‌نام یا سفارش)، ربات باید بداند
-                        کاربر هم‌اکنون در چه مرحله‌ای قرار دارد:
+                        وقتی می‌خواهید از کاربر در چند مرحله اطلاعات بگیرید (مثل ثبت‌نام یا سفارش)، ربات باید بداند کاربر هم‌اکنون در چه مرحله‌ای قرار دارد:
                     </p>
 
                     <div class="relative group">
-                        <pre
-                            class="bg-[#1A1B23] text-slate-200 rounded-2xl p-5 text-xs sm:text-sm overflow-x-auto leading-relaxed shadow-inner"><code># مرحله ۱: شروع ثبت‌نام و تغییر وضعیت به WAITING_FOR_NAME
+                        <pre class="bg-[#1A1B23] text-slate-200 rounded-2xl p-5 text-xs sm:text-sm overflow-x-auto leading-relaxed shadow-inner"><code># مرحله ۱: شروع ثبت‌نام و تغییر وضعیت به WAITING_FOR_NAME
 @bot.command("register")
 async def step_one(ctx: NotoContext):
     await ctx.set_state("WAITING_FOR_NAME")
@@ -771,8 +656,7 @@ async def step_three(ctx: NotoContext):
     
     await ctx.clear_state() # ریست و پاک‌سازی وضعیت کاربر
     await ctx.reply(f"🎉 ثبت‌نام تکمیل شد!\n👤 نام: {name}\n🎂 سن: {age}")</code></pre>
-                        <button onclick="copyCode(this)"
-                            class="absolute top-3 left-3 bg-white/10 hover:bg-white/20 text-slate-300 p-2 rounded-xl text-xs flex items-center gap-1 transition">
+                        <button onclick="copyCode(this)" class="absolute top-3 left-3 bg-white/10 hover:bg-white/20 text-slate-300 p-2 rounded-xl text-xs flex items-center gap-1 transition">
                             <i data-lucide="copy" class="w-3.5 h-3.5"></i>
                         </button>
                     </div>
@@ -781,19 +665,16 @@ async def step_three(ctx: NotoContext):
                 <!-- Section 9.5: Media Handling -->
                 <section id="media-handling" class="glassmorphism-card rounded-3xl p-6 sm:p-8 space-y-4">
                     <div class="flex items-center gap-3">
-                        <div
-                            class="w-10 h-10 rounded-xl bg-cream-100 border border-cream-200 flex items-center justify-center text-cream-500 font-bold">
+                        <div class="w-10 h-10 rounded-xl bg-cream-100 border border-cream-200 flex items-center justify-center text-cream-500 font-bold">
                             ۹.۵
                         </div>
                         <div>
-                            <h2 class="text-lg sm:text-xl font-extrabold text-slate-900">ارسال عکس، اسناد و فایل‌های
-                                مالتی‌مدیا</h2>
+                            <h2 class="text-lg sm:text-xl font-extrabold text-slate-900">ارسال عکس، اسناد و فایل‌های مالتی‌مدیا</h2>
                             <p class="text-xs text-slate-500">ارسال تصویر با لینک مستقیم یا فایل سیستمی</p>
                         </div>
                     </div>
                     <div class="relative group">
-                        <pre
-                            class="bg-[#1A1B23] text-slate-200 rounded-2xl p-5 text-xs sm:text-sm overflow-x-auto leading-relaxed shadow-inner"><code>@bot.command("send_photo")
+                        <pre class="bg-[#1A1B23] text-slate-200 rounded-2xl p-5 text-xs sm:text-sm overflow-x-auto leading-relaxed shadow-inner"><code>@bot.command("send_photo")
 async def send_image_example(ctx: NotoContext):
     # ارسال عکس با استفاده از لینک مستقیم یا فایل لوکال
     photo_url = "https://picsum.photos/600/400"
@@ -802,8 +683,7 @@ async def send_image_example(ctx: NotoContext):
         photo=photo_url,
         caption="📸 این یک تصویر تستی ارسال‌شده با LazyNoto است!"
     )</code></pre>
-                        <button onclick="copyCode(this)"
-                            class="absolute top-3 left-3 bg-white/10 hover:bg-white/20 text-slate-300 p-2 rounded-xl text-xs flex items-center gap-1 transition">
+                        <button onclick="copyCode(this)" class="absolute top-3 left-3 bg-white/10 hover:bg-white/20 text-slate-300 p-2 rounded-xl text-xs flex items-center gap-1 transition">
                             <i data-lucide="copy" class="w-3.5 h-3.5"></i>
                         </button>
                     </div>
@@ -812,48 +692,38 @@ async def send_image_example(ctx: NotoContext):
                 <!-- Section 10: Resilience -->
                 <section id="resilience" class="glassmorphism-card rounded-3xl p-6 sm:p-8 space-y-4">
                     <div class="flex items-center gap-3">
-                        <div
-                            class="w-10 h-10 rounded-xl bg-cream-100 border border-cream-200 flex items-center justify-center text-cream-500 font-bold">
+                        <div class="w-10 h-10 rounded-xl bg-cream-100 border border-cream-200 flex items-center justify-center text-cream-500 font-bold">
                             ۱۰
                         </div>
                         <div>
-                            <h2 class="text-lg sm:text-xl font-extrabold text-slate-900">سیستم تاب‌آوری و ضد کرش هوشمند
-                                (Rate Limit)</h2>
+                            <h2 class="text-lg sm:text-xl font-extrabold text-slate-900">سیستم تاب‌آوری و ضد کرش هوشمند (Rate Limit)</h2>
                             <p class="text-xs text-slate-500">مدیریت خودکار خطاهای شبکه و ریت‌لیمیت تلگرام</p>
                         </div>
                     </div>
                     <div class="bg-cream-100/70 border border-cream-200 rounded-2xl p-6 space-y-3">
                         <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                            اگر تعداد زیادی پیام در یک ثانیه بفرستید، تلگرام خطای <code
-                                class="text-cream-600 font-bold font-mono">RetryAfter</code> صادر می‌کند. LazyNoto به
-                            طور هوشمند این ارورها را شناسایی کرده و برنامه را دقیقاً به اندازه ثانیه‌های اعلام‌شده به
-                            حالت خواب (Sleep) می‌برد تا ربات بدون کرش یا افت سرعت به کار خود ادامه دهد.
+                            اگر تعداد زیادی پیام در یک ثانیه بفرستید، تلگرام خطای <code class="text-cream-600 font-bold font-mono">RetryAfter</code> صادر می‌کند. LazyNoto به طور هوشمند این ارورها را شناسایی کرده و برنامه را دقیقاً به اندازه ثانیه‌های اعلام‌شده به حالت خواب (Sleep) می‌برد تا ربات بدون کرش یا افت سرعت به کار خود ادامه دهد.
                         </p>
                     </div>
                 </section>
 
                 <!-- Section 11: Full Project -->
-                <section id="full-project"
-                    class="glassmorphism-card rounded-3xl p-6 sm:p-8 space-y-4 border-2 border-cream-300/80 shadow-glass-lg">
+                <section id="full-project" class="glassmorphism-card rounded-3xl p-6 sm:p-8 space-y-4 border-2 border-cream-300/80 shadow-glass-lg">
                     <div class="flex items-center gap-3">
-                        <div
-                            class="w-10 h-10 rounded-xl bg-gradient-to-br from-cream-500 to-champagne-600 flex items-center justify-center text-white font-bold shadow-md shadow-cream-500/20">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-cream-500 to-champagne-600 flex items-center justify-center text-white font-bold shadow-md shadow-cream-500/20">
                             ۱۱
                         </div>
                         <div>
-                            <h2 class="text-lg sm:text-xl font-extrabold text-slate-900">پروژه کامل عملی: سامانه تیکتینگ
-                                و پیام به ادمین</h2>
+                            <h2 class="text-lg sm:text-xl font-extrabold text-slate-900">پروژه کامل عملی: سامانه تیکتینگ و پیام به ادمین</h2>
                             <p class="text-xs text-slate-500">ترکیب منوی شیشه‌ای، FSM و فوروارد هوشمند پیام</p>
                         </div>
                     </div>
                     <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        این سورس‌کد کامل، نحوه ترکیب منوی شیشه‌ای، تغییر مرحله (FSM) و فوروارد پیام به ادمین را نشان
-                        می‌دهد:
+                        این سورس‌کد کامل، نحوه ترکیب منوی شیشه‌ای، تغییر مرحله (FSM) و فوروارد پیام به ادمین را نشان می‌دهد:
                     </p>
 
                     <div class="relative group">
-                        <pre
-                            class="bg-[#1A1B23] text-slate-200 rounded-2xl p-5 text-xs sm:text-sm overflow-x-auto leading-relaxed shadow-inner"><code>from lazynoto import LazyNoto, NotoContext, InlineMenu
+                        <pre class="bg-[#1A1B23] text-slate-200 rounded-2xl p-5 text-xs sm:text-sm overflow-x-auto leading-relaxed shadow-inner"><code>from lazynoto import LazyNoto, NotoContext, InlineMenu
 
 # تنظیم آیدی ادمین و توکن
 ADMIN_ID = 123456789
@@ -897,8 +767,7 @@ async def ticket_forward(ctx: NotoContext):
 
 if __name__ == "__main__":
     bot.run()</code></pre>
-                        <button onclick="copyCode(this)"
-                            class="absolute top-3 left-3 bg-white/10 hover:bg-white/20 text-slate-300 p-2 rounded-xl text-xs flex items-center gap-1 transition">
+                        <button onclick="copyCode(this)" class="absolute top-3 left-3 bg-white/10 hover:bg-white/20 text-slate-300 p-2 rounded-xl text-xs flex items-center gap-1 transition">
                             <i data-lucide="copy" class="w-3.5 h-3.5"></i>
                         </button>
                     </div>
@@ -912,13 +781,11 @@ if __name__ == "__main__":
     <footer class="max-w-7xl mx-auto px-4 sm:px-6 py-10 relative z-10 border-t border-cream-200/80">
         <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
             <div class="flex items-center gap-2">
-                <div
-                    class="w-6 h-6 rounded-lg bg-cream-500 flex items-center justify-center text-white text-[10px] font-bold">
-                    LN</div>
+                <div class="w-6 h-6 rounded-lg bg-cream-500 flex items-center justify-center text-white text-[10px] font-bold">LN</div>
                 <p>دانشنامه اختصاصی LazyNoto برای <strong>سوشیانس</strong> عزیز 🚀</p>
             </div>
             <div class="flex items-center gap-4 font-semibold text-slate-600">
-                <a href="home.html" class="hover:text-cream-500 transition">صفحه اصلی</a>
+                <a href="index.html" class="hover:text-cream-500 transition">صفحه اصلی</a>
                 <a href="https://t.me/BotFather" target="_blank" class="hover:text-cream-500 transition">BotFather</a>
             </div>
         </div>
